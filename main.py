@@ -1,6 +1,7 @@
 import random
 from encode import book_cipher_encode
 from decode import book_cipher_decode
+
 BOOK_SOURCE = """
 Gjuha shqipe eshte pasuria jone me e madhe. Ne kete projekt 
 kemi implementuar algoritmet per sigurimin e komunikimit. 
@@ -11,8 +12,8 @@ def main():
     print("\n" + "="*40)
     print("      SISTEMI I SIGURISE SE TE DHENAVE")
     print("="*40)
-    print("1. Enkripto Mesazhin (Book Cipher)")
-    print("2. Dekripto Kodin (Book Cipher)")
+    print("1. Enkripto (Book Cipher)")
+    print("2. Dekripto (Book Cipher)")
     print("3. Dil")
     
     while True:
@@ -20,13 +21,12 @@ def main():
         
         if zgjedhja == "1":
             teksti = input("Shkruaj mesazhin: ")
-    
-            kodi = encode_book_cipher(teksti, BOOK_SOURCE)
+            kodi = book_cipher_encode(teksti, BOOK_SOURCE)
             print(f"\n[SUKSES] Kodi i gjeneruar: \n{kodi}")
             
         elif zgjedhja == "2":
             kodi_hyrje = input("Ngjitni numrat per dekriptim: ")
-            mesazhi = decode_book_cipher(kodi_hyrje, BOOK_SOURCE)
+            mesazhi = book_cipher_decode(kodi_hyrje, BOOK_SOURCE)
             print(f"\n[SUKSES] Mesazhi i zbuluar: \n{mesazhi}")
             
         elif zgjedhja == "3":
@@ -37,3 +37,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
