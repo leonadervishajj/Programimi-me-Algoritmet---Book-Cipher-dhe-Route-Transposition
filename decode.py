@@ -1,11 +1,10 @@
+
 def book_cipher_decode(encoded_text, book_words):
-    result =  []
-    tokens = encoded_text.split()            #krijohet lista ku ruhen fjalet e dekoduara
-                                             #teksti i enkriptuar ndahet ne pjese
-                                             
+    result = []
+    tokens = encoded_text.split()
+
     for token in tokens:
-        
-        if token == " ? ":
+        if token == "?":
             result.append("?")
         else:
             try:
@@ -13,5 +12,5 @@ def book_cipher_decode(encoded_text, book_words):
                 result.append(book_words[index])
             except (ValueError, IndexError):
                 result.append("?")
-    
+
     return " ".join(result)

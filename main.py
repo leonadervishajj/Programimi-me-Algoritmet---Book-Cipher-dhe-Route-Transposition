@@ -8,3 +8,5 @@ book_words = book.lower().split()    #libri kthehet ne nje liste te fjaleve
 text = input("Shkruaj tekstin per encode: ")    #ketu behet input nga useri
 
 result = book_cipher_encode(text, book_words)
+print(f"Rezultati i enkoduar: {result}")
+
