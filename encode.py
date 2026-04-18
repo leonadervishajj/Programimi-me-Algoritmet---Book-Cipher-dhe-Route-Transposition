@@ -2,6 +2,8 @@ import random
 
 def book_cipher_encode(text, book_words):
     result = []
+    book_lower = [w.lower() for w in book_words]
+    
     words = text.lower().split()
     
     for word in words:
