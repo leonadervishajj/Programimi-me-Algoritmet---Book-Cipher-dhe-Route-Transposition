@@ -1,3 +1,4 @@
+
 def book_cipher_decode(encoded_text, book_words):
     result = []
     tokens = encoded_text.split()

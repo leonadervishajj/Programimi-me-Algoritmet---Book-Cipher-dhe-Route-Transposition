@@ -26,6 +26,7 @@ def encode_book_cipher(message, book):
             
     return "-".join(cipher_text)
 
+<<<<<<< HEAD
 def decode_book_cipher(cipher_text, book):
     book = book.lower()
     parts = cipher_text.split("-")
@@ -62,3 +63,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+=======
+result = book_cipher_encode(text, book_words)
+print(f"Rezultati i enkoduar: {result}")
+
+>>>>>>> features-book-cipher
