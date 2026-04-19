@@ -84,7 +84,7 @@ L D X X
 **Output (kolonë për kolonë):*
 HOL EWD LOX LRX
 
-🔓 Si zhvillohet Dekodimi ?
+***🔓 Si zhvillohet Dekodimi ?**
 
 Dekodimi te Route Transposition Cipher është procesi i rikthimit të mesazhit origjinal nga një tekst i enkriptuar ku shkronjat janë riorganizuar sipas një rruge (route) në një grid (tabelë).
 Qëllimi është të rindërtohet saktë tabela origjinale dhe pastaj të lexohet mesazhi në rend normal.
